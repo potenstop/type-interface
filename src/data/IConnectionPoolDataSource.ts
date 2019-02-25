@@ -11,7 +11,7 @@ import {ICommonDataSource} from "./ICommonDataSource";
 import {IPooledConnection} from "./IPooledConnection";
 
 export interface IConnectionPoolDataSource extends ICommonDataSource {
-    kind: "ICommonDataSource";
+    kind: "IConnectionPoolDataSource";
     getPooledConnection(): IPooledConnection;
     getPooledConnection(username: string, password: string): IPooledConnection;
 
